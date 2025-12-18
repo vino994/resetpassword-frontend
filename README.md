@@ -1,18 +1,53 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# 📘 FRONTEND README  
+👉 Repo: `resetpassword-frontend`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```md
+# 🔐 Password Reset Frontend (React + Vite)
 
-## React Compiler
+This is the frontend application for the **Password Reset Flow** project.  
+It provides UI for login, register, forgot password, and reset password.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🚀 Live Frontend URL
+https://login-reset-forgot.netlify.app
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- React (Vite)
+- Tailwind CSS
+- Axios
+- React Router DOM
+- React Icons
+
+---
+
+## 📌 Features
+
+- User Registration UI
+- Login UI
+- Forgot Password UI
+- Reset Password UI
+- Form Validation
+- Toast Notifications
+- Loading States
+- Responsive Design
+
+---
+
+## 🔁 Password Reset Flow (Frontend)
+
+1. User clicks **Forgot Password**
+2. Enters registered email
+3. Reset link is generated
+4. User opens reset link
+5. New password is set
+6. Redirected to login page
+
+---
+
+
