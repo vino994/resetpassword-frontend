@@ -25,8 +25,12 @@ export default function ResetPassword() {
 
     try {
       setLoading(true);
-      const res = await api.post(`/auth/reset-password/${token}`, { password });
-      setMsg(res.data.msg);
+      const res = await api.post(
+        `/auth/reset-password/${token}`,
+        { password }
+      );
+
+      setMsg(res.data.msg || "Password reset successful");
       setPassword("");
 
       setTimeout(() => navigate("/login"), 2000);
@@ -58,7 +62,7 @@ export default function ResetPassword() {
 
             <button
               disabled={loading}
-              className="w-full bg-indigo-600 text-white py-2 rounded cursor-pointer disabled:opacity-50"
+              className="w-full bg-indigo-600 text-white py-2 rounded disabled:opacity-50"
             >
               {loading ? "Resetting..." : "Reset Password"}
             </button>
